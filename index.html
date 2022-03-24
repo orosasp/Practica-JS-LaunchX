@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+  <link rel="shortcut icon" href="./assets/images/poke_ball.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="header--title-container">
+      <img src="./assets/images/poke_ball.svg" alt="Poke Ball">
+      <h1>Pokedex</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="main-pokedex-container">
+      <div class="main-pokedex-searcher">
+        <input type="text" placeholder="Nombre del Pokemon" name="pokename" id="pokeName"><br>
+        <button id="searchPokemon" onclick="fetchPokemon()">Buscar pokemon</button>
+        <button id="clearPokemon" disabled="true">Clear pokemon</button>
+      </div>
+      <div>
+        <img src="./assets/images/quienesesepokemon.jpg" class="backgroundImg" id="pokeImg">
+      </div>
+      <section class="main-tables-container">
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <section class="left">
+      <ul>
+        <li><a href="https://github.com/orosasp" target="_blank">Github</a></li>
+        <li><a href="https://twitter.com/jorosasp" target="_blank">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/orosasp/" target="_blank">Linkedin</a></li>
+      </ul>
+    </section>
+    <section class="right">
+      <img src="./assets/images/poke_ball.svg" width="150" height="34" alt="Logo de Pokedex">
+    </section>
+  </footer>
+
+  <script src="./pokedesxLaunchX.js"></script>
+</body>
+
+</html>
